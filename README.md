@@ -1,3 +1,5 @@
+AOA sir Ameen Alam 
+sir i made this template in the prescribed time with tha repository name UIUX-Hacakathone2024. but as i used the same repo for my next hackathone, code had benn changed. so i have decided to rebuild the previous code again. thats why this repo contains the original code of hackathone 2. 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
