@@ -7,6 +7,9 @@ function Header2() {
       <nav className="flex justify-center items-center py-4">
         <ul className="flex flex-wrap justify-center gap-6 md:gap-10 text-sm md:text-base">
           <li>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
             <Link href="/Plant pots">Plant pots</Link>
           </li>
           <li>
