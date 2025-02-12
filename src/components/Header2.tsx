@@ -19,7 +19,7 @@ function Header2() {
             <Link href="/Tables">Tables</Link>
           </li>
           <li>
-            <Link href="/Chairs">Chairs</Link>
+            <Link href="/ProductListing">Chairs</Link>
           </li>
           <li>
             <Link href="/Crockery">Crockery</Link>
