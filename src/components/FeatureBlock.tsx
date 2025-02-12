@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 import { TbTruckDelivery } from "react-icons/tb";
 import { CiCircleCheck } from "react-icons/ci";
 import { LuSprout } from "react-icons/lu";
 import { VscFileSymlinkDirectory } from "react-icons/vsc";
 
-const FeautureBlock = () => {
+const FeatureBlock = () => {
   return (
     <div className="mt-10 px-6 md:px-16">
       {/* Centered Heading */}
@@ -14,44 +14,41 @@ const FeautureBlock = () => {
 
       {/* Responsive Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 font-satoshi">
-        {/* Feature 1 */}
-        <div className="py-4 text-center md:text-left">
-          <TbTruckDelivery size={32} className="mx-auto md:mx-0 text-[#2A254B]" />
-          <h4 className="font-bold mt-4">Next day as standard</h4>
-          <p className="text-sm mt-2">
-            Order before 3pm and get your order the next day as standard.
-          </p>
-        </div>
-
-        {/* Feature 2 */}
-        <div className="py-4 text-center md:text-left">
-          <CiCircleCheck size={32} className="mx-auto md:mx-0 text-[#2A254B]" />
-          <h4 className="font-bold mt-4">Made by true artisans</h4>
-          <p className="text-sm mt-2">
-            Handmade crafted goods made with real passion and craftsmanship.
-          </p>
-        </div>
-
-        {/* Feature 3 */}
-        <div className="py-4 text-center md:text-left">
-          <VscFileSymlinkDirectory size={32} className="mx-auto md:mx-0 text-[#2A254B]" />
-          <h4 className="font-bold mt-4">Unbeatable prices</h4>
-          <p className="text-sm mt-2">
-            For our materials and quality, you won’t find better prices anywhere.
-          </p>
-        </div>
-
-        {/* Feature 4 */}
-        <div className="py-4 text-center md:text-left">
-          <LuSprout size={32} className="mx-auto md:mx-0 text-[#2A254B]" />
-          <h4 className="font-bold mt-4">Recycled packaging</h4>
-          <p className="text-sm mt-2">
-            We use 100% recycled packaging to ensure our footprint is manageable.
-          </p>
-        </div>
+        {/** Feature Items */}
+        {features.map((feature, index) => (
+          <div key={index} className="flex flex-col items-center md:items-start text-center md:text-left">
+            <feature.icon size={32} className="text-[#2A254B]" />
+            <h4 className="font-bold mt-4">{feature.title}</h4>
+            <p className="text-sm mt-2 text-gray-600">{feature.description}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
 };
 
-export default FeautureBlock;
+/** Feature Data */
+const features = [
+  {
+    icon: TbTruckDelivery,
+    title: "Next day as standard",
+    description: "Order before 3pm and get your order the next day as standard.",
+  },
+  {
+    icon: CiCircleCheck,
+    title: "Made by true artisans",
+    description: "Handmade crafted goods made with real passion and craftsmanship.",
+  },
+  {
+    icon: VscFileSymlinkDirectory,
+    title: "Unbeatable prices",
+    description: "For our materials and quality, you won’t find better prices anywhere.",
+  },
+  {
+    icon: LuSprout,
+    title: "Recycled packaging",
+    description: "We use 100% recycled packaging to ensure our footprint is manageable.",
+  },
+];
+
+export default FeatureBlock;
