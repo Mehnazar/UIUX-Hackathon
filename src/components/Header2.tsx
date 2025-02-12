@@ -10,7 +10,7 @@ function Header2() {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/Plant pots">Plant pots</Link>
+            <Link href="/ProductListing2">Plant pots</Link>
           </li>
           <li>
             <Link href="/Ceramics">Ceramics</Link>

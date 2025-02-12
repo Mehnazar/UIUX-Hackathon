@@ -16,9 +16,11 @@ const Header = () => {
 
         {/* Cart and User Icons */}
         <div className="flex items-center gap-3">
+          
           <Link href={"/cart"}><IoCartOutline className="text-xl md:text-2xl" />
 </Link>
-          <FaRegUser className="text-xl md:text-2xl" />
+         <Link href={"/login"}> <FaRegUser className="text-xl md:text-2xl" /></Link>
+          
         </div>
       </div>
     </header>
